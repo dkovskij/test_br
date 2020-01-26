@@ -1,15 +1,26 @@
 <template>
   <div id="app">
     <Header />
+    <description />
+    <cases />
+    <div class="footer-wrap">
+      <footer-component />
+    </div>
   </div>
 </template>
 
 <script>
-import Header from '@/components/header.vue';
+import Header from '@/components/Header.vue';
+import Description from '@/components/Description.vue';
+import Cases from '@/components/Cases.vue';
+import FooterComponent from '@/components/FooterComponent.vue';
 
 export default {
   components: {
     Header,
+    Description,
+    Cases,
+    FooterComponent,
   },
 };
 </script>
@@ -28,6 +39,5 @@ a {
   font-family: 'Montserrat', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: $default_button;
 }
 </style>

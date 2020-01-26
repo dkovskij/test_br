@@ -38,16 +38,20 @@ export default {
 
 <style lang="scss" scoped>
 header {
-  background-color: $header_background;
+  background-color: $dark-blue-grey;
   height: 100px;
+  display: flex;
+  align-content: center;
 }
 
 .content {
-  max-width: 1366px;
+  width: 1266px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  align-content: center;
+  align-items: center;
+  padding: 0 50px;
+  height: 100%;
 }
 ul {
   display: grid;
@@ -55,7 +59,10 @@ ul {
   list-style: none;
   column-gap: 54px;
 }
-
+.menu {
+  align-self: center;
+  height: 100%;
+}
 .menu-item a {
   font-family: "Montserrat";
   font-size: 16px;
@@ -65,5 +72,16 @@ ul {
   line-height: normal;
   letter-spacing: normal;
   color: #ffffff;
+  display: block;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  &:active {
+    color: $darkish-pink;
+  }
+  &:hover {
+    border-bottom: 8px solid $darkish-pink;
+    box-sizing: border-box;
+  }
 }
 </style>
