@@ -66,6 +66,9 @@ export default {
   }
 }
 @media screen and (max-width: 1365px) {
+  .description-wrap {
+    background-image: url('../assets/wpapers-ru-white-and-blue@2x.png');
+  }
   .the-best {
     padding: 0 145px;
   }
